@@ -1,18 +1,23 @@
-import React from "react";
-import {Body, useStyles} from "./style";
-import {Box, Typography} from "@material-ui/core"
+import React, {useState} from "react";
+import {Body, useStyles, Form} from "./style";
+import {Box, Typography, OutlinedInput, Button} from "@material-ui/core"
+import {constants} from "../../constants";
+
+const BACK_END = constants.url;
 
 const SignUp = () => {
     const classes = useStyles();
+    const [error, setError] = useState({
+        error: false
+    })
     return (
-        <Box>
+        <Box className={classes.root}>
             <Typography align="center" variant="h5">create  account</Typography>
             <Body>
-            <div>
-                <form>
-                    <input type="password" placeholder="password" />
-                </form>
-            </div>
+                <Form>
+                    <OutlinedInput error={error.error} placeholder="enter your name" />
+                    <Button >Sign up</Button>
+                </Form>
             </Body>
         </Box>
     )

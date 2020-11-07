@@ -9,6 +9,10 @@ export const useStyles = makeStyles((theme) => ({
 }))
 
 export const Body = styled.div`
-    background-color: red;
+    background-color: powderblue;
     height: 100vh;
+`
+export const Form = styled.div`
+    width: 70%;
+    margin: auto;
 `

@@ -1,3 +1,3 @@
 export const constants = {
-    ur: 'http://localhost:'
+    url: 'http://localhost:'
 }
