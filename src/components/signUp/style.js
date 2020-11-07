@@ -5,6 +5,11 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
         margin: 'auto'
+    },
+    btn: {
+        width: '70%',
+        background: 'red',
+        color: 'white'
     }
 }))
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import SignUp from "./components/signUp"
-import { Provider} from "react-redux"
+// import { Provider} from "react-redux"
 // import store from "./components/appstore/store"
+import MainApp from "./views/index";
 
 function App() {
   return (
-    // <Provider store={store}>
-    <div className="App">
-     <SignUp />
-    </div>
-    // </Provider>
+    <>
+    {/* <Provider store={store}> */}
+    <MainApp />
+    {/* </Provider> */}
+    </>
   );
 }
 
