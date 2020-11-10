@@ -8,6 +8,17 @@ const BACK_END = constants.URL;
 const SignUp = (props) => {
     console.log(props.navigation);
     const classes = useStyles();
+    const [user, setUser] = useState({
+        firstname: '',
+        surname: '',
+        lastname: '',
+        email: '',
+        phonenumber: '',
+        gender: '',
+        accountNumber: '',
+        accountBalance: '',
+        pin: ''
+    })
     const [error, setError] = useState({
         error: false
     })
