@@ -1,4 +1,4 @@
-import {actions} from "../actions"
+import {actionTypes} from "../actions"
 
 const initialState = {
     isLoggedIn: false,
@@ -7,8 +7,9 @@ const initialState = {
 };
 
    function userloginReducer (state = initialState, action) {
+       console.log(action);
          switch ( action.type ) {
-             case actions().LOGIN_USER:
+             case actionTypes.LOGIN_USER:
                  return {
                      ...state,
                      data: action.payLoad

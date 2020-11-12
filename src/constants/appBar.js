@@ -1,14 +1,18 @@
 import React from "react";
-import { Input} from "@material-ui/core"
+import { Input, Typography} from "@material-ui/core"
 import { NavDiv, Nav, useStyles} from "./style";
+import { Search } from "@material-ui/icons";
 
 const Navigation = () => {
     const classes = useStyles();
     return (
             <Nav>
                 <NavDiv>
-                    <Input className={classes.input} />
+                    <Input startAdornment={<Search />} className={classes.input} />
                 </NavDiv>
+                <Typography>
+                    Profile
+                </Typography>
             </Nav>
     )
 }

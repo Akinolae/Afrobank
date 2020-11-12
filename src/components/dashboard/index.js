@@ -1,9 +1,8 @@
 import React from "react";
-import { Body, useStyles, Div1, Box, Div2} from "./style";
+import { Body, useStyles, Div1, Box, Div2, Grid, Card} from "./style";
 import { Typography} from "@material-ui/core";
 import Navigation from "../../constants/appBar";
-
-const drwawerWidth = 240;
+import "./index.css";
 
 
 const Dashboard = () => {
@@ -18,7 +17,15 @@ const Dashboard = () => {
             </Div1>
             <Div2>
                 <Box>
-                <Navigation />
+                <Navigation />    
+                <Typography variant="h6" style={{paddingTop: '40px'}}>
+                    Transactions
+                </Typography>
+                <Grid>
+                    <Card></Card>
+                    <Card></Card>
+                    <Card></Card>
+                </Grid>
                 </Box>
             </Div2>
 
