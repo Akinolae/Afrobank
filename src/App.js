@@ -1,10 +1,11 @@
 import React from 'react';
+import Main from "./pages"
 import "./index.css";
 
 function App() {
   return ( 
           <div>
-         <h1>Afrobank</h1>
+          <Main />
           </div>
   )
 }
